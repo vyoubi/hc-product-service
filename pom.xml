@@ -11,7 +11,7 @@
 	<groupId>de.haeger-consulting.internShop</groupId>
 	<artifactId>hc-product-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>hc-inventory-service</name>
+	<name>hc-product-service</name>
 	<description>InternShop for Haeger Consulting</description>
 	<properties>
 		<java.version>11</java.version>
