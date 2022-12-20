@@ -38,7 +38,7 @@ public class ProductServiceImpl implements ProductService {
         log.info("createProduct in productService");
         List<File> files = fileRepository.findAllByProductName(product.getName());
         if (files.size() != 0) {
-            product.setProductImageUrl("http://localhost:5000/api/products/images/file/download/" + files.get(0).getImageId());
+            product.setProductImageUrl("http://ada0270b0ff7f4a5d9c8155d3508a0ba-665421351.eu-west-2.elb.amazonaws.com/api/products/images/file/download/" + files.get(0).getImageId());
             Product product1 = productRepository.findByName(product.getName());
             if (product1 == null) {
                 return productRepository.save(product);
